@@ -2,7 +2,9 @@
 layout: default
 ---
 
-# Heading
+This is introductory text.
+
+# Heading 1
 
 ***
 

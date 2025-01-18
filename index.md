@@ -1,8 +1,8 @@
 ---
-Portfolio: (Unfinished)
+layout: default
 ---
 
-# Test
+# Heading
 
 ***
 

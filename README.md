@@ -1,2 +1,2 @@
 # Project Portfolio
-https://busch0.github.io/portfolio/index.html
+https://busch0.github.io/portfolio/

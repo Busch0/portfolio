@@ -11,7 +11,28 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+			.collapsible {
+			  background-color: none;
+			  color: #ffffff;
+			  cursor: pointer;
+			  width: 18%;
+			  text-align: center;
+			  font-weight: 1;
+			}
+			
+			.contentt {
+			  padding: 0 0px;
+			  max-height: 0;
+			  overflow: hidden;
+			  transition: max-height 0.2s ease-out;
+			  background-color: none;
+			}
+			</style>
+
 	</head>
+
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -20,7 +41,7 @@
 				<!-- Header -->
 				<!-- Note: The "styleN" class below should match that of the banner element. -->
 					<header id="header" class="alt style2">
-						<!--<a href="index.html" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>-->
+						<a href="index.html" class="logo"><span> < back</span></a>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -75,10 +96,22 @@
 										<div class="inner">
 											<header class="major">
 												<h3>Mercedes CAD Model</h3>
+												<h5>January 2024-April 2024</h5>
 											</header>
 											<p>Lots of parts lots of hours lots of Ls lots of Ws</p>
 											<ul class="actions">
-												<li><a href="" class="button">Learn more</a></li>
+												<li>
+													<button class="collapsible">Learn More</button>
+													<div class="contentt">
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													</div>
+												</li>
+												<!--<li>
+													<details>
+													<summary>Learn More</summary>
+													<p>Text you see after expansion.Text you see after expansion.Text you see after expansion.</p>
+												  </details>
+												</li>-->
 											</ul>
 										</div>
 									</div>
@@ -91,10 +124,18 @@
 										<div class="inner">
 											<header class="major">
 												<h3>Autonomous Ball Shooter</h3>
+												<h5>June 2024-August 2024</h5>
 											</header>
 											<p>Literally btd6 mortar monkey but the monkey is a robot and the shells are a ping pong ball and the balloons are a cup. (top half pictured)</p>
 											<ul class="actions">
-												<li><a href="" class="button">Learn more</a></li>
+												<!--<li><a href="" class="button">Learn more</a></li>-->
+												<li>
+													<button class="collapsible">Learn More</button>
+													<div class="contentt">
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													</div>
+												</li>
 											</ul>
 										</div>
 									</div>
@@ -107,10 +148,17 @@
 										<div class="inner">
 											<header class="major">
 												<h3>Firefighting Mask</h3>
+												<h5>January 2024-April 2024</h5>
 											</header>
 											<p>The guy on the project button on the main page.</p>
 											<ul class="actions">
-												<li><a href="" class="button">Learn more</a></li>
+												<!--<li><a href="" class="button">Learn more</a></li>-->
+												<li>
+													<button class="collapsible">Learn More</button>
+													<div class="contentt">
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													</div>
+												</li>
 											</ul>
 										</div>
 									</div>
@@ -123,10 +171,18 @@
 										<div class="inner">
 											<header class="major">
 												<h3>BMW E46 :husk:</h3>
+												<h5>July 2024-August 2024</h5>
 											</header>
 											<p>Self explanatory (it broke).</p>
 											<ul class="actions">
-												<li><a href="" class="button">Learn more</a></li>
+												<!--<li><a href="" class="button">Learn more</a></li>-->
+												<li>
+													<button class="collapsible">Learn More</button>
+													<div class="contentt">
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													</div>
+												</li>
 											</ul>
 										</div>
 									</div>
@@ -159,11 +215,10 @@
 						<ul class="copyright">
 							<li>&copy; Ryan Busch 2025</li>
 							<li>Email: ryanbusch32@gmail.com</li>
-							<li>Based on Template by HTML5 UP</li>
+							<li>Based on design by HTML5 UP</li>
 						</ul>
 					</div>
 				</footer>
-
 			</div>
 
 		<!-- Scripts -->
@@ -174,6 +229,23 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				var coll = document.getElementsByClassName("collapsible");
+				var i;
+				
+				for (i = 0; i < coll.length; i++) {
+				  coll[i].addEventListener("click", function() {
+					this.classList.toggle("active");
+					var content = this.nextElementSibling;
+					if (content.style.maxHeight){
+					  content.style.maxHeight = null;
+					} else {
+					  content.style.maxHeight = content.scrollHeight + "px";
+					} 
+				  });
+				}
+				</script>
 
 	</body>
 </html>

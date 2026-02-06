@@ -10,27 +10,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-
-		<style>
-			.collapsible {
-			  background-color: none;
-			  color: #ffffff;
-			  cursor: pointer;
-			  width: 18%;
-			  text-align: center;
-			  font-weight: 1;
-			}
-			
-			.contentt {
-			  padding: 0 0px;
-			  max-height: 0;
-			  overflow: hidden;
-			  transition: max-height 0.2s ease-out;
-			  background-color: none;
-			}
-			</style>
-
 	</head>
 
 	<body class="is-preload">
@@ -40,10 +21,10 @@
 
 				<!-- Header -->
 				<!-- Note: The "styleN" class below should match that of the banner element. -->
-					<header id="header" class="alt style2">
-						<a href="index.html" class="logo"><span> < back</span></a>
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><span> < home</span></a>
 						<nav>
-							<a href="#menu">Menu</a>
+							<a href="#menu">Menu ☰</a>
 						</nav>
 					</header>
 
@@ -62,61 +43,86 @@
 					<section id="banner" class="style1">
 						<div class="inner">
 							<span class="image">
-								<img src="images/main.jpg" alt="" />
+								<img src="images/welding.jpg" alt="" />
 							</span>
 							<header class="major">
 								<h1>Projects</h1>
 							</header>
 							<div class="content">
-								<p>Filler words</p>
+								<h7>Stuff I do for free</h7>
 							</div>
 						</div>
 					</section>
 
 				<!-- Main -->
 					<div id="main">
-
 						<!-- One -->
 							<section id="one">
 								<div class="inner">
-									<header class="major">
+									<header class="minor">
 										<h2>"You should add a small text section here" - Sun Tzu</h2>
 									</header>
-									<p>The space from this section makes the page look better but I dont know what makes sense here
-										<br> Second line
-									</p>
+									<p> Feel free to explore my past projects by category or scroll through the full list below.</p>
+									<p> Make this section transition better</p>
+								</div>
+								<div style="text-align:center">
+									<a class="projects" href="#cad">CAD Projects</a>
+									<a class="projects" href="#robotics">Robotics Projects</a>
+									<a class="projects" href="#mech">Mechanical Projects</a>
+									<a class="projects" href="#misc">Miscellaneous Projects</a>
 								</div>
 							</section>
 
-						<!-- Two -->
+							<div class="projectheader">
+								<header class="minor">
+									<h2 id="robotics">Robotics Projects</h2>
+								</header>
+							</div>
 							<section id="two" class="spotlights">
 								<section>
 									<a class="image">
-										<img src="images/mercedes.png" alt="" data-position="center center" />
+										<img src="images/AUV.png" alt="" data-position="top center" />
 									</a>
 									<div class="content">
 										<div class="inner">
-											<header class="major">
-												<h3>Mercedes CAD Model</h3>
-												<h5>January 2024-April 2024</h5>
+											<header class="minor">
+												<h3>Autonomous Underwater Vehicle</h3>
+												<h5>February 2026-TBD</h5>
 											</header>
-											<p>Lots of parts lots of hours lots of Ls lots of Ws</p>
+											<p>costs like half my salary this better work out</p>
 											<ul class="actions">
+												<!--<li><a href="" class="button">Learn more</a></li>-->
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
-													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text<span class = "image right"><img src="images/mercedes.png" alt="" data-position="center center"/></span></p>
-													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
-													  <p><span class = "image left"><img src="images/mercedes.png" alt="" data-position="center center"/></span>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
 													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
 													</div>
 												</li>
-												<!--<li>
-													<details>
-													<summary>Learn More</summary>
-													<p>Text you see after expansion.Text you see after expansion.Text you see after expansion.</p>
-												  </details>
-												</li>-->
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="images/Motor.png" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="minor">
+												<h3>Custom Designed BLDC Motor</h3>
+												<h5>February 2026</h5>
+											</header>
+											<p>Saved -$231 by building it myself</p>
+											<ul class="actions">
+												<!--<li><a href="" class="button">Learn more</a></li>-->
+												<li>
+													<button class="collapsible">Learn More</button>
+													<div class="contentt">
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													</div>
+												</li>
 											</ul>
 										</div>
 									</div>
@@ -127,11 +133,266 @@
 									</a>
 									<div class="content">
 										<div class="inner">
-											<header class="major">
+											<header class="minor">
 												<h3>Autonomous Ball Shooter</h3>
 												<h5>June 2024-August 2024</h5>
 											</header>
-											<p>Literally btd6 mortar monkey but the monkey is a robot and the shells are a ping pong ball and the balloons are a cup. (top half pictured)</p>
+											<p>Literally btd6 mortar monkey but the monkey is a robot and the shells are a ping pong ball and the balloons are a cup.</p>
+											<ul class="actions">
+												<!--<li><a href="" class="button">Learn more</a></li>-->
+												<li>
+													<button class="collapsible">Learn More</button>
+													<div class="contentt">
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</section>	
+								<section>
+									<a class="image">
+										<img src="images/5bar.png" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="minor">
+												<h3>Five-Bar Parallel Axis Manipulator</h3>
+												<h5>October 2025-TBD</h5>
+											</header>
+											<p>Very fancy name for a lot of inverse kinematics and some funny links.</p>
+											<ul class="actions">
+												<!--<li><a href="" class="button">Learn more</a></li>-->
+												<li>
+													<button class="collapsible">Learn More</button>
+													<div class="contentt">
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="images/Ball.jpg" alt="" data-position="25% 25%"/>
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="minor">
+												<h3>Ball Balancing Robot</h3>
+												<h5>January 2026-TBD</h5>
+											</header>
+											<p>PID Control!!!</p>
+											<ul class="actions">
+												<!--<li><a href="" class="button">Learn more</a></li>-->
+												<li>
+													<button class="collapsible">Learn More</button>
+													<div class="contentt">
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</section>
+							</section>
+
+							<div class="projectheader">
+								<header class="minor">
+									<h2 id="cad">CAD Design Projects</h2>
+								</header>
+							</div>
+							<section id="two" class="spotlights">
+								<section>
+									<a class="image">
+										<img src="images/mercedes.png" alt="" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="minor">
+												<h3>Mercedes CAD Model</h3>
+												<h5>January 2024-April 2024</h5>
+											</header>
+											<p>Lots of parts lots of hours lots of Ls lots of Ws. (This is a blueprint for the format I want to use on every project)</p>
+											<ul class="actions">
+												<li>
+													<button class="collapsible">Learn More</button>
+													<div class="contentt">
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text<span class = "image right"><img src="images/engine.png" alt="" data-position="center center"/></span></p>
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													  <p><span class = "image left"><img src="images/suspension.png" alt="" data-position="center center"/></span>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text<span class = "image right"><img src="images/engineexplode.png" alt="" data-position="center center"/></span></p>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="images/PattyWagon.png" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="minor">
+												<h3>Patty Wagon</h3>
+												<h5>March 2025</h5>
+											</header>
+											<p>Built the whole drivetrain in 6 hours. Team placed 1st in 24h design competition (of ~20 teams)</p>
+											<ul class="actions">
+												<!--<li><a href="" class="button">Learn more</a></li>-->
+												<li>
+													<button class="collapsible">Learn More</button>
+													<div class="contentt">
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</section>
+							</section>
+							
+
+							<div class="projectheader">
+								<header class="minor">
+									<h2 id="mech">Mechanical Projects</h2>
+								</header>
+							</div>
+							<section id="two" class="spotlights">
+								<section>
+									<a class="image">
+										<img src="images/torpedo.png" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="minor">
+												<h3>AUV Torpedo</h3>
+												<h5>October 2025-November 2025</h5>
+											</header>
+											<p>ACTUALLY GETTING TESTED THIS YEAR :fire:</p>
+											<ul class="actions">
+												<!--<li><a href="" class="button">Learn more</a></li>-->
+												<li>
+													<button class="collapsible">Learn More</button>
+													<div class="contentt">
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="images/Handcar.jpg" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="minor">
+												<h3>Handcar</h3>
+												<h5>September 2025-November 2025</h5>
+											</header>
+											<p>They thought we couldn't do it. They were wrong.</p>
+											<ul class="actions">
+												<!--<li><a href="" class="button">Learn more</a></li>-->
+												<li>
+													<button class="collapsible">Learn More</button>
+													<div class="contentt">
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="images/MountShort.jpg" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="minor">
+												<h3>FSAE Electric Motor Mounts</h3>
+												<h5>September 2025-December 2025</h5>
+											</header>
+											<p>2 thousand years of validation, 23g saved.</p>
+											<ul class="actions">
+												<!--<li><a href="" class="button">Learn more</a></li>-->
+												<li>
+													<button class="collapsible">Learn More</button>
+													<div class="contentt">
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="images/Sprocket.png" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="minor">
+												<h3>FSAE Rear Sprocket</h3>
+												<h5>September 2024-April 2025</h5>
+											</header>
+											<p>Another design victim to ev cars</p>
+											<ul class="actions">
+												<!--<li><a href="" class="button">Learn more</a></li>-->
+												<li>
+													<button class="collapsible">Learn More</button>
+													<div class="contentt">
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="images/oilpan.jpg" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="minor">
+												<h3>FSAE Dry Sump Oil Pan</h3>
+												<h5>September 2024-April 2025</h5>
+											</header>
+											<p>Would've been sick if it was MANUFACTURED :wah: (engine block pictured)</p>
+											<ul class="actions">
+												<!--<li><a href="" class="button">Learn more</a></li>-->
+												<li>
+													<button class="collapsible">Learn More</button>
+													<div class="contentt">
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="images/Spooling System.png" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="minor">
+												<h3>AUV Tether Spooling System</h3>
+												<h5>February 2026</h5>
+											</header>
+											<p>Side project to make software teams life easier</p>
 											<ul class="actions">
 												<!--<li><a href="" class="button">Learn more</a></li>-->
 												<li>
@@ -151,8 +412,8 @@
 									</a>
 									<div class="content">
 										<div class="inner">
-											<header class="major">
-												<h3>Firefighting Mask</h3>
+											<header class="minor">
+												<h3>Firefighter Mask Adapter</h3>
 												<h5>January 2024-April 2024</h5>
 											</header>
 											<p>The guy on the project button on the main page.</p>
@@ -168,17 +429,48 @@
 										</div>
 									</div>
 								</section>
+							</section>
+
+							<div class="inner">
+								<header class="projectheader">
+									<h2 id="misc">Miscellaneous Projects</h2>
+								</header>
+							</div>
+							<section id="two" class="spotlights">
 								<section>
 									<a class="image">
-										<img src="images/guy.jpg" alt="" data-position="top center" />
+										<img src="images/MLight.jpg" alt="" data-position="25% 25%"/>
 									</a>
 									<div class="content">
 										<div class="inner">
-											<header class="major">
-												<h3>BMW E46 :husk:</h3>
-												<h5>July 2024-August 2024</h5>
+											<header class="minor">
+												<h3>M Light</h3>
+												<h5>December 2025</h5>
 											</header>
-											<p>Self explanatory (it broke).</p>
+											<p>Cool light.</p>
+											<ul class="actions">
+												<!--<li><a href="" class="button">Learn more</a></li>-->
+												<li>
+													<button class="collapsible">Learn More</button>
+													<div class="contentt">
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="images/WatchboxShort.jpg" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="minor">
+												<h3>Watchbox</h3>
+												<h5>December 2025</h5>
+											</header>
+											<p>Some sick woodworking (and sewing and glasswork lol).</p>
 											<ul class="actions">
 												<!--<li><a href="" class="button">Learn more</a></li>-->
 												<li>
@@ -193,9 +485,43 @@
 									</div>
 								</section>
 							</section>
-							
-
-						<!-- Three -->
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								
+								
+								
+								<!--<section>
+									<a class="image">
+										<img src="images/guy.jpg" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="minor">
+												<h3>BMW E46 :husk:</h3>
+												<h5>July 2024-August 2024</h5>
+											</header>
+											<p>Self explanatory (it broke).</p>
+											<ul class="actions">
+												<--<li><a href="" class="button">Learn more</a></li>->
+												<li>
+													<button class="collapsible">Learn More</button>
+													<div class="contentt">
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</section>-->
+								
+								
+								
+								
+								
+								
+							</section>
+						<!-- Three 
 							<section id="three">
 								<div class="inner">
 									<header class="major">
@@ -204,7 +530,7 @@
 									<p>Probably only happening if im still procrastinating jobs apps lol</p>
 								</div>
 							</section>
-
+						-->
 					</div>
 
 				<!-- Footer -->
@@ -218,13 +544,17 @@
 							<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 						</ul>-->
 						<ul class="copyright">
-							<li>&copy; Ryan Busch 2025</li>
+							<li>&copy; Ryan Busch 2026</li>
 							<li>Email: ryanbusch32@gmail.com</li>
-							<li>Based on design by HTML5 UP</li>
+							<!--<li>Based on design by HTML5 UP</li>-->
 						</ul>
 					</div>
 				</footer>
 			</div>
+
+		<button id="totop" class="hide">
+			^ Top<!--<i class="material-icons">arrow_upward</i>-->
+		</button>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -250,7 +580,17 @@
 					} 
 				  });
 				}
-				</script>
 
+				const totop = document.querySelector("#totop");
+				
+				totop.addEventListener("click", function() {
+					window.scrollTo({
+						top: 0,
+						left: 0,
+						behaviour: "smooth"
+					});
+				});
+				</script>
+		
 	</body>
 </html>

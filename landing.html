@@ -49,7 +49,7 @@
 								<h1>Projects</h1>
 							</header>
 							<div class="content">
-								<h7 style="padding-bottom: 5em;">Stuff I do for free</h7>
+								<!-- <h7 style="padding-bottom: 5em;">Stuff I do for free</h7> -->
 							</div>
 							<div style="text-align:center">
 									<a class="projects" href="#robotics">Robotics Projects</a><a style="padding: 0.5em;"></a>
@@ -64,7 +64,6 @@
 					<div id="main">
 						<!-- One -->
 							<section id="one">
-								
 								<div class="inner">
 									<!-- <header class="minor">
 										<h2>"You should add a small text section here" - Sun Tzu</h2>
@@ -74,12 +73,11 @@
 											<div class="col-6 col-12-small">
 												<h3>In Progress</h3>
 												<ul>
-													<li>AUV</li>
-													<li>BLDC Motor</li>
-													<li>Inverted Pendulum</li>
-													<li>Spooling System</li>
-													<li>Final Torpedo Revision (One full piece, larger torpedoes (more mass and stronger)</li>
-													<li>Gearbox</li>
+													<li>AUV <i style="font-size: smaller;">(Personal)</i></li>
+													<li>BLDC Motor <i style="font-size: smaller;">(Personal/Course)</i></li>
+													<li>Tether Spool<i style="font-size: smaller;">(Design Team)</i></li>
+													<li>Final Torpedo Revision <i style="font-size: smaller;">(Design Team)</i></li>
+													<li>Gearbox <i style="font-size: smaller;">(Course)</i></li>
 												</ul>
 											</div>
 											<div class="col-6 col-12-small">
@@ -94,7 +92,6 @@
 											</div>
 									</div>
 								</div>
-								
 							</section>
 
 							<div class="projectheader">
@@ -105,7 +102,7 @@
 							<section id="two" class="spotlights">
 								<section>
 									<a class="image">
-										<img src="images/AUV.png" alt="" data-position="top center" />
+										<img src="images/AUV1.png" alt="" data-position="top center" />
 									</a>
 									<div class="content">
 										<div class="inner">
@@ -119,8 +116,10 @@
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
-													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
-													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													  <p>My AUV project is an ongoing collaboration between me and an electrical engineering student to push our software and computer visions skills through an ambitious project. The goal of this project is to create a fully autonomous underwater drone with an additional focus on optimizing our budget as much as possible.<span class = "image right"><img src="images/Thruster.jpg" alt="" data-position="center center"/></span></p>
+													  <p>This results in innovating and designing many traditionally off the shelf components such as our thrusters and motor controllers. Initial designs for the whole structure have been completed and it is currently being assembled, as well as custom PCBs for driving the thrusters. The initial design goal of the AUV is to have 4 degrees of freedom from the 4 thrusters, and vertical control through a PID controlled ballast. Eventually plans are to upgrade to include more thrusters and potentially buy higher quality components.</p>
+													  <p><span class = "image left"><img src="images/EndCapTest.jpg" alt="" data-position="center center"/></span>So far a significant portion of testing has focused on waterproofing the electronics enclosure and testing methods of penetrating it with cables and a tube to bring water into the ballast without exposing any electronics to moisture. Using O-rings I made out of rubber strips, a 3D printed end cap, and teflon tape I have achieved a fully waterproof enclosure, so far withstanding up to 24 hours of submersion at low depth.</p>
+													  <p>Once working remote control has been achieved the next steps are to get ROS working on our Raspberry Pi and get computer vision working so we can begin developing the software aspects of the project. For initial remote control testing both an ethernet tether and low frequency (27MHz) radio frequencies are being considered for low depth operation.</p>
 													</div>
 												</li>
 											</ul>
@@ -135,7 +134,7 @@
 										<div class="inner">
 											<header class="minor">
 												<h3>Custom Designed BLDC Motor</h3>
-												<h5>February 2026</h5>
+												<h5>February 2026 - March 2026</h5>
 											</header>
 											<p>Saved -$231 by building it myself</p>
 											<ul class="actions">
@@ -143,15 +142,15 @@
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
-													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
-													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													  <p>This custom BLDC motor serves as both a course project and my own investigation into robotics actuators, learning about FOC control fundamentals and implementation. I designed the motor to have a wide and shallow profile for high torque density while still being small enough to embed into a larger project in the future.</p>
+													  <p>The motor consists of 24 stator coils wound with 26awg wire, and 26 magnet poles to achieve its relatively high torque. I am currently working on implementing a controller, likely PID control, to smooth the motors movements. As this project was also used for a course it had limitations regarding buying a stator, so it is currently printed out of PLA, with a PETG rotor. In the future I plan on manufacturing a laminated stator out of layered 22 gauge steel sheets, and a steel rotor to act as a magnetic backing ring.</p>
 													</div>
 												</li>
 											</ul>
 										</div>
 									</div>
 								</section>
-								<section>
+								<!-- <section>
 									<a class="image">
 										<img src="images/InvertedPendulum.jpg" alt="" data-position="top center" />
 									</a>
@@ -163,7 +162,6 @@
 											</header>
 											<p>What else could you ask of a $3500 servo?</p>
 											<ul class="actions">
-												<!--<li><a href="" class="button">Learn more</a></li>-->
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
@@ -174,7 +172,7 @@
 											</ul>
 										</div>
 									</div>
-								</section>
+								</section> -->
 								<section>
 									<a class="image">
 										<img src="images/ballfullassembly.png" alt="" data-position="top center" />
@@ -187,7 +185,6 @@
 											</header>
 											<p>Literally btd6 mortar monkey but the monkey is a robot and the shells are a ping pong ball and the balloons are a cup.</p>
 											<ul class="actions">
-												<!--<li><a href="" class="button">Learn more</a></li>-->
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
@@ -199,7 +196,7 @@
 										</div>
 									</div>
 								</section>
-								<section>
+								<!-- <section>
 									<a class="image">
 										<img src="images/PiCar.jpg" alt="" data-position="top center" />
 									</a>
@@ -211,7 +208,6 @@
 											</header>
 											<p>Incredibly overkill line following robot</p>
 											<ul class="actions">
-												<!--<li><a href="" class="button">Learn more</a></li>-->
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
@@ -222,7 +218,7 @@
 											</ul>
 										</div>
 									</div>
-								</section>	
+								</section>	 -->
 								<section>
 									<a class="image">
 										<img src="images/5bar.png" alt="" data-position="top center" />
@@ -235,7 +231,6 @@
 											</header>
 											<p>Very fancy name for a lot of inverse kinematics and some funny links.</p>
 											<ul class="actions">
-												<!--<li><a href="" class="button">Learn more</a></li>-->
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
@@ -259,7 +254,6 @@
 											</header>
 											<p>PID Control!!!</p>
 											<ul class="actions">
-												<!--<li><a href="" class="button">Learn more</a></li>-->
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
@@ -316,12 +310,12 @@
 											</header>
 											<p>Built the whole drivetrain in 6 hours. Team placed 1st in 24h design competition (of ~20 teams)</p>
 											<ul class="actions">
-												<!--<li><a href="" class="button">Learn more</a></li>-->
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
-													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
-													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													  <p>The Patty Wagon was a group submission to a design competition held by my school's engineering society. We had 24 hours to design a fictional device and present it to the other ~20 participating groups. My group chose to design the Patty Wagon from spongebob because it served as both a creative entry while having room for unexpected depth.</p>
+													  <p>I designed a full drivetrain assembly for it over the one day period, with a 4 cylinder boxer engine, differential, and driveshafts all linked in one large assembly in addition to other cosmetic components. We achieved first place due to both the quantity and quality of parts we produced in the short period of time, utilizing advanced surfacing and assembly features for our parts. A few examples of these are surface modelling components of the burger for the vehicle and linking the cam shafts of the engine with the crank shaft through tensioners and the solidworks assembly belt feature.</p>
+													  <p>The submissions were judged by our CAD design professor, one of our aerospace professors, and a CAD designer engineer from a local company in Kelowna rating them on presentation and technical ability.</p>
 													</div>
 												</li>
 											</ul>
@@ -349,12 +343,11 @@
 											</header>
 											<p>ACTUALLY GETTING TESTED THIS YEAR :fire:</p>
 											<ul class="actions">
-												<!--<li><a href="" class="button">Learn more</a></li>-->
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
-													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
-													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													  <p>The torpedo launching system on Marine Robotics’ AUV has been the primary focus of mine over my duration on the team. The launch system has been designed to use a fully mechanical assembly to launch a torpedo with a pre-set power through a target at competition.</p>
+													  <p>The assembly uses as little hardware as possible, relying on one spring and a set screw for adjusting its pre-load, as well as a solenoid to release the torpedo. It is held in place with geometric constraints and launched by rotating it so its fins line up with holes to launch out. The torpedo itself is tuned to be neutrally buoyant through varying the infill density of the print at different positions along the torpedo. This allows it to both reliably shoot in a straight line and in turn go farther due to lower drag forces.</p>
 													</div>
 												</li>
 											</ul>
@@ -373,11 +366,11 @@
 											</header>
 											<p>They thought we couldn't do it. They were wrong.</p>
 											<ul class="actions">
-												<!--<li><a href="" class="button">Learn more</a></li>-->
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
-													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													  <p>My manufacturing course served as my introduction to the theory of manufacturing processes and practical hands-on experience using various machines. Our course project was to design either a model train or a clamp requiring every major machining operation. I pushed the limit of what could be done with our time constraints opting to make a functional kinematic assembly.</p>
+													  <p>When my design was reviewed my group was explicitly told that each year groups attempt and fail to make proper meshing gears with a functioning rotating assembly. This motivated me to make the design work, and through heavy planning outside of our labs to make as effective use of our machining time as possible we managed to achieve a working fourbar linkage that rotates as the handcar is moved along a table. Solutions had to be quickly developed along the process as there were occasional oversights in our designs, such as the gear teeth being too long. Creative uses of hardware and leaving room for adjustment in the designs worked to mitigate most major problems that arose over the duration of the project. </p>
 													</div>
 												</li>
 											</ul>
@@ -396,7 +389,6 @@
 											</header>
 											<p>2 thousand years of validation, 23g saved.</p>
 											<ul class="actions">
-												<!--<li><a href="" class="button">Learn more</a></li>-->
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
@@ -420,7 +412,6 @@
 											</header>
 											<p>Another design victim to ev cars</p>
 											<ul class="actions">
-												<!--<li><a href="" class="button">Learn more</a></li>-->
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
@@ -431,7 +422,7 @@
 										</div>
 									</div>
 								</section>
-								<section>
+								<!-- <section>
 									<a class="image">
 										<img src="images/oilpan.jpg" alt="" data-position="25% 25%" />
 									</a>
@@ -443,7 +434,6 @@
 											</header>
 											<p>Would've been sick if it was MANUFACTURED :wah: (engine block pictured)</p>
 											<ul class="actions">
-												<!--<li><a href="" class="button">Learn more</a></li>-->
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
@@ -453,7 +443,7 @@
 											</ul>
 										</div>
 									</div>
-								</section>
+								</section> -->
 								<section>
 									<a class="image">
 										<img src="images/Spool.png" alt="" data-position="top center" />
@@ -461,24 +451,23 @@
 									<div class="content">
 										<div class="inner">
 											<header class="minor">
-												<h3>AUV Tether Spooling System</h3>
+												<h3>AUV Tether Spool</h3>
 												<h5>February 2026</h5>
 											</header>
 											<p>Side project to make software teams life easier</p>
 											<ul class="actions">
-												<!--<li><a href="" class="button">Learn more</a></li>-->
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
-													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
-													  <p>Hidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden TextHidden Text</p>
+													  <p>The tether spool I designed was a side project meant to streamline some of the effort put into test days by reducing the time spent coiling and moving around our 50m long tether by hand. It is designed to use off the shelf components like PVC pipe, maintaining a low cost while outperforming 3D printed parts.</p>
+													  <p>An important aspect of the spool is reducing the chance of damaging the tether due to its inability to bend or twist a significant amount. A slip ring is used to allow one end of the wire to rotate 360 degrees without twisting the other end. This allows one end of the tether to be plugged into a computer while the length going to the AUV is adjusted depending on its depth, removing any risks from 50m of wire loose on the ground.</p>
 													</div>
 												</li>
 											</ul>
 										</div>
 									</div>
 								</section>
-								<section>
+								<!-- <section>
 									<a class="image">
 										<img src="images/mask.png" alt="" data-position="25% 25%" />
 									</a>
@@ -490,7 +479,6 @@
 											</header>
 											<p>The guy on the project button on the main page.</p>
 											<ul class="actions">
-												<!--<li><a href="" class="button">Learn more</a></li>-->
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
@@ -500,7 +488,7 @@
 											</ul>
 										</div>
 									</div>
-								</section>
+								</section> -->
 							</section>
 
 							<div class="projectheader">
@@ -521,7 +509,6 @@
 											</header>
 											<p>Cool light.</p>
 											<ul class="actions">
-												<!--<li><a href="" class="button">Learn more</a></li>-->
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
@@ -532,7 +519,7 @@
 										</div>
 									</div>
 								</section>
-								<section>
+								<!-- <section>
 									<a class="image">
 										<img src="images/WatchboxShort.jpg" alt="" data-position="top center" />
 									</a>
@@ -544,7 +531,6 @@
 											</header>
 											<p>Some sick woodworking (and sewing and glasswork lol).</p>
 											<ul class="actions">
-												<!--<li><a href="" class="button">Learn more</a></li>-->
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
@@ -556,7 +542,7 @@
 										</div>
 									</div>
 								</section>
-							</section>
+							</section> -->
 						<!-- Two -->
 								<!--<section>
 									<a class="image">

@@ -75,7 +75,7 @@
 												<ul>
 													<li>AUV <i style="font-size: smaller;">(Personal)</i></li>
 													<li>BLDC Motor <i style="font-size: smaller;">(Personal/Course)</i></li>
-													<li>Tether Spool<i style="font-size: smaller;">(Design Team)</i></li>
+													<li>Tether Spool <i style="font-size: smaller;">(Design Team)</i></li>
 													<li>Final Torpedo Revision <i style="font-size: smaller;">(Design Team)</i></li>
 													<li>Gearbox <i style="font-size: smaller;">(Course)</i></li>
 												</ul>
@@ -83,11 +83,11 @@
 											<div class="col-6 col-12-small">
 												<h3>Future/Paused Projects</h3>
 												<ul>
-													<li>5 Bar Arm</li>
-													<li>Ball balancing robot</li>
-													<li>Distortion Pedal</li>
+													<li>Rotating Parallel SCARA Arm <i style="font-size: smaller;">(Paused)</i></li>
+													<li>Ball balancing robot <i style="font-size: smaller;">(Paused)</i></li>
+													<li>Distortion Pedal <i style="font-size: smaller;">(Planned)</i></li>
 													<li>3D Scanner</li>
-													<li>Magnetic Levitation</li>
+													<!-- <li>Magnetic Levitation Project</li> -->
 												</ul>
 											</div>
 									</div>
@@ -117,7 +117,7 @@
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
 													  <p>My AUV project is an ongoing collaboration between me and an electrical engineering student to push our software and computer visions skills through an ambitious project. The goal of this project is to create a fully autonomous underwater drone with an additional focus on optimizing our budget as much as possible.<span class = "image right"><img src="images/Thruster.jpg" alt="" data-position="center center"/></span></p>
-													  <p>This results in innovating and designing many traditionally off the shelf components such as our thrusters and motor controllers. Initial designs for the whole structure have been completed and it is currently being assembled, as well as custom PCBs for driving the thrusters. The initial design goal of the AUV is to have 4 degrees of freedom from the 4 thrusters, and vertical control through a PID controlled ballast. Eventually plans are to upgrade to include more thrusters and potentially buy higher quality components.</p>
+													  <p>This results in innovating and designing many traditionally off the shelf components such as our thrusters and motor controllers. Currently the thruster designs use A2212 drone motors and electrical cable glands are being used as penetrators for the electroncis enclosure. Initial designs for the whole structure have been completed and it is currently being assembled, as well as custom PCBs for driving the thrusters. The initial design goal of the AUV is to have 4 degrees of freedom from the 4 thrusters, and vertical control through a PID controlled ballast. Eventually plans are to upgrade to include more thrusters and potentially buy higher quality components.</p>
 													  <p><span class = "image left"><img src="images/EndCapTest.jpg" alt="" data-position="center center"/></span>So far a significant portion of testing has focused on waterproofing the electronics enclosure and testing methods of penetrating it with cables and a tube to bring water into the ballast without exposing any electronics to moisture. Using O-rings I made out of rubber strips, a 3D printed end cap, and teflon tape I have achieved a fully waterproof enclosure, so far withstanding up to 24 hours of submersion at low depth.</p>
 													  <p>Once working remote control has been achieved the next steps are to get ROS working on our Raspberry Pi and get computer vision working so we can begin developing the software aspects of the project. For initial remote control testing both an ethernet tether and low frequency (27MHz) radio frequencies are being considered for low depth operation.</p>
 													</div>
@@ -142,8 +142,8 @@
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
-													  <p>This custom BLDC motor serves as both a course project and my own investigation into robotics actuators, learning about FOC control fundamentals and implementation. I designed the motor to have a wide and shallow profile for high torque density while still being small enough to embed into a larger project in the future.</p>
-													  <p>The motor consists of 24 stator coils wound with 26awg wire, and 26 magnet poles to achieve its relatively high torque. I am currently working on implementing a controller, likely PID control, to smooth the motors movements. As this project was also used for a course it had limitations regarding buying a stator, so it is currently printed out of PLA, with a PETG rotor. In the future I plan on manufacturing a laminated stator out of layered 22 gauge steel sheets, and a steel rotor to act as a magnetic backing ring.</p>
+													  <p><span class = "image left"><img src="images/MotorAirgap.jpg" alt="" data-position="center center"/></span>This custom BLDC motor serves as both a course project and my own investigation into robotics actuators, learning about FOC control fundamentals and implementation. I designed the motor to have a wide and shallow profile for high torque density while still being small enough to embed into a larger project in the future. The motor consists of 24 stator coils wound with 26awg wire, and 26 magnet poles to achieve a high torque for its size. </p>
+													  <p>I am currently working on implementing a controller, likely PID control, to smooth the motors movements. As this project was also used for a course it had limitations regarding buying a stator, so it is currently printed out of PLA, with a PETG rotor. In the future I plan on manufacturing a laminated stator out of layered 22 gauge steel sheets, and a steel rotor to act as a magnetic backing ring.</p>
 													</div>
 												</li>
 											</ul>
@@ -188,7 +188,9 @@
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
-													  <p>This project was my first exposure to computer vision and the integration of multiple disciplines. I collaborated with a computer science student to create a robot that could autonomously detect and shoot at cups from a distance. </p>
+													  <p><span class = "image left"><img src="images/ballshooter.png" alt="" data-position="center center"/></span>This project was my first exposure to computer vision and the integration of multiple disciplines. I collaborated with a computer science student to create a robot that could autonomously detect and shoot at cups from a distance. </p>
+													  <p>The assembly uses stepper motors to create a 360 degree rotating platform. On top a ball launcher is mounted that uses a servo motor for its trigger and dc motors with flywheels for shooting balls. The way the robot detects cups is through a combination of an ultrasonic sensor and a camera (either phone or webcam). <span class = "image right"><img src="images/CupFilter1.png" alt="" data-position="center center"/><img src="images/CupFilter2.png" alt="" data-position="center center"/></span></p>
+													  <p>The detection algorithm works by applying a filter to the image the computer receives and the center of mass of the filtered pixels is found and determined as likely the center of the cup. To assist the position the robot aims at, it scans over the cup and the point closest to the robot is determined by the ultrasonic sensor as the center. The robot had an accurate range of between 2ft-8ft.</p>
 													</div>
 												</li>
 											</ul>
@@ -310,8 +312,8 @@
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
-													  <p>The Patty Wagon was a group submission to a design competition held by my school's engineering society. We had 24 hours to design a fictional device and present it to the other ~20 participating groups. My group chose to design the Patty Wagon from spongebob because it served as both a creative entry while having room for unexpected depth.</p>
-													  <p>I designed a full drivetrain assembly for it over the one day period, with a 4 cylinder boxer engine, differential, and driveshafts all linked in one large assembly in addition to other cosmetic components. We achieved first place due to both the quantity and quality of parts we produced in the short period of time, utilizing advanced surfacing and assembly features for our parts. A few examples of these are surface modelling components of the burger for the vehicle and linking the cam shafts of the engine with the crank shaft through tensioners and the solidworks assembly belt feature.</p>
+													  <p><span class = "image left"><img src="images/PattyInterior.jpg" alt="" data-position="center center"/></span>The Patty Wagon was a group submission to a design competition held by my school's engineering society. We had 24 hours to design a fictional device and present it to the other ~20 participating groups. My group chose to design the Patty Wagon from spongebob because it served as both a creative entry while having room for unexpected depth.</p>
+													  <p><span class = "image right"><img src="images/PattyEngine.jpg" alt="" data-position="center center"/></span>I designed a full drivetrain assembly for it over the one day period, with a 4 cylinder boxer engine, differential, and driveshafts all linked in one large assembly in addition to other cosmetic components. We achieved first place due to both the quantity and quality of parts we produced in the short period of time, utilizing advanced surfacing and assembly features for our parts. A few examples of these are surface modelling components of the burger for the vehicle and linking the cam shafts of the engine with the crank shaft through tensioners and the solidworks assembly belt feature.</p>
 													  <p>The submissions were judged by our CAD design professor, one of our aerospace professors, and a CAD designer engineer from a local company in Kelowna rating them on presentation and technical ability.</p>
 													</div>
 												</li>

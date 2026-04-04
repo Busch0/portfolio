@@ -69,7 +69,7 @@
 										<h2>"You should add a small text section here" - Sun Tzu</h2>
 									</header>
 									<p> Feel free to explore my past projects by category or scroll through the full list below.</p> -->
-									<div class="row">
+									<div class="row" style="border: 10px;">
 											<div class="col-6 col-12-small">
 												<h3>In Progress</h3>
 												<ul>
@@ -102,7 +102,7 @@
 							<section id="two" class="spotlights">
 								<section>
 									<a class="image">
-										<img src="images/AUV1.png" alt="" data-position="top center" />
+										<img src="images/AUV.jpg" alt="" data-position="top center" />
 									</a>
 									<div class="content">
 										<div class="inner">
@@ -116,10 +116,13 @@
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
-													  <p>My AUV project is an ongoing collaboration between me and an electrical engineering student to push our software and computer visions skills through an ambitious project. The goal of this project is to create a fully autonomous underwater drone with an additional focus on optimizing our budget as much as possible.<span class = "image right"><img src="images/Thruster.jpg" alt="" data-position="center center"/></span></p>
-													  <p>This results in innovating and designing many traditionally off the shelf components such as our thrusters and motor controllers. Currently the thruster designs use A2212 drone motors and electrical cable glands are being used as penetrators for the electronics enclosure. Initial designs for the whole structure have been completed and it is currently being assembled, as well as custom PCBs for driving the thrusters. The initial design goal of the AUV is to have 4 degrees of freedom from the 4 thrusters, and vertical control through a PID controlled ballast. Eventually plans are to upgrade to include more thrusters and potentially buy higher quality components.</p>
-													  <p><span class = "image left"><img src="images/AUVEnclosure.jpg" alt="" data-position="center center"/></span>So far a significant portion of testing has focused on waterproofing the electronics enclosure and testing methods of penetrating it with cables and a tube to bring water into the ballast without exposing any electronics to moisture. Using O-rings I made out of rubber strips, a 3D printed end cap, and teflon tape I have achieved a fully waterproof enclosure, so far withstanding up to 24 hours of submersion at low depth.</p>
-													  <p>Once working remote control has been achieved the next steps are to get ROS working on our Raspberry Pi and get computer vision working so we can begin developing the software aspects of the project. For initial remote control testing both an ethernet tether and low frequency (27MHz) radio frequencies are being considered for low depth operation.</p>
+													  <p><span class = "image right"><img src="images/Thruster.jpg" alt="" data-position="center center"/></span>My AUV project is an ongoing collaboration between me and another student with two main objectives in mind: to push our software and computer vision skills and to complete a project with a significant scope, comparable to that of a design team. The goal of this project is to create a fully autonomous underwater drone that can topographically map its environment and detect objects such as trash in the water. As added depth I have been innovating and designing many traditionally off the shelf components such as our thrusters and motor controllers from scratch.</p>
+													  <p>Currently the thruster designs use A2212 drone motors mounted to a custom propeller and thruster body. The electronics enclosure tube uses electrical cable glands with custom inserts as penetrators. The initial design goal of the AUV is to have 4 degrees of freedom from the 4 thrusters, and vertical control through a PID controlled ballast. <span class = "image left"><img src="images/AUVEnclosure.jpg" alt="" data-position="center center"/></span>Eventually plans are to upgrade to include more thrusters and potentially buy higher quality motors. So far a significant portion of testing has focused on waterproofing the electronics enclosure and testing methods of penetrating it with cables and a tube to bring water into the ballast without exposing any electronics to moisture. </p>
+													  <p>My design for the removable endcaps uses O-rings I cut out of rubber strips, teflon tape, and a 3D printed cap to seal the ends of the acrylic tube. So far this setup has been tested at low depth for around 30 hours under submersion with no leaks. The thruster designs have been individually tested and are now being implemented together on the AUV structure.</p>
+													  <p>Once working remote control has been achieved the next steps are to implement our Raspberry Pi using ROS and get computer vision working so we can begin developing the software aspects of the project. For initial remote control testing both an ethernet tether and low frequency (27MHz) radio frequencies are being considered for low depth operation.</p>
+													  <video width="30%vw" autoplay muted loop controls>
+													    <source src="images/videos/ThrusterTest.mp4" type="video/mp4">
+													  </video>
 													</div>
 												</li>
 											</ul>
@@ -128,7 +131,7 @@
 								</section>
 								<section>
 									<a class="image">
-										<img src="images/Motor.jpg" alt="" data-position="top center" />
+										<img src="images/MotorFull.jpg" alt="" data-position="top center" />
 									</a>
 									<div class="content">
 										<div class="inner">
@@ -142,9 +145,17 @@
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
-													  <p><span class = "image left"><img src="images/MotorAirgap.jpg" alt="" data-position="center center"/></span>This custom BLDC motor serves as both a course project and my own investigation into robotics actuators, learning about FOC control fundamentals and implementation. I designed the motor to have a wide and shallow profile for high torque density while still being small enough to embed into a larger project in the future. The motor consists of 24 stator coils wound with 26awg wire, and 26 magnet poles to achieve a high torque for its size. </p>
-													  <p>I am currently working on implementing a controller, likely PID control, to smooth the motors movements. As this project was also used for a course it had limitations regarding buying a stator, so it is currently printed out of PLA, with a PETG rotor. In the future I plan on manufacturing a laminated stator out of layered 22 gauge steel sheets, and a steel rotor to act as a magnetic backing ring.</p>
+													  <p><span class = "image left" ><img style="width:15vw;" src="images/MotorGearbox.jpg" alt="" data-position="center center"/></span>This custom BLDC motor serves as both a course project and my own investigation into robotics actuators, learning about field oriented control (FOC) fundamentals and implementation. I designed the motor to have a wide and shallow profile for high torque density while still being small enough to embed into a larger project in the future. The motor consists of 24 stator coils wound with 26awg wire, and 22 magnet poles to achieve its relatively high torque given the material constraints. As this project was also used for a course it had limitations regarding buying a stator, so it is currently printed out of PLA, with a PETG rotor. There is an MT6701 magnetic encoder with a magnet installed just below the shaft of the motor to provide position feedback and allow for position, torque, and velocity control. Additionally, I designed a planetary gearset that mounts on top with a 5:1 ratio to reduce the speed for higher torque. <span class = "image right"><img style="width:15vw;" src="images/MotorInside.jpg" alt="" data-position="center center"/></span></p>
+													  <p>Originally I had planned on making a two stage planetary gearbox however I have decided to create a new design from the ground up. My plans are to recreate the motor with higher quality materials and explore harmonic and cycloidal reduction systems over the summer once I am no longer constrained by time and course requirements. The moving parts will be printed out of nylon due to its lower friction and higher resistance to abrasion. <span class = "image left"><img style="width:15vw;" src="images/MotorTop.jpg" alt="" data-position="center center"/></span>The motor stator and outrunner will be created out of a steel to provide significantly higher magnetic flux density within the motor allowing for a much higher torque (estimated to be roughly 2x higher) than the plastic design.</p>
+													  <p>The present height of the motor and planetary gearset is ~63mm (excluding the electronics enclosure it's mounted on) and my goal is to reduce this with the new design, utilizing the space within the stator as the first stage of the gearbox. Below are two videos showing the motor running at approximately 30% throttle with and without the gearbox attached.</p>
+													<video style="width:30vw; float:left;" autoplay muted loop controls>
+														<source src="images/videos/Motor.mp4" type="video/mp4">
+													</video>
+													<video style="width:30vw; float:left; " autoplay muted loop controls>
+														<source src="images/videos/MotorPlanetary.mp4" type="video/mp4">
+													</video>
 													</div>
+													
 												</li>
 											</ul>
 										</div>
@@ -288,9 +299,9 @@
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
-													  <p>This CAD design project was a term long project in my CAD design course where everyone's projects were compared and the top 3 presented at a ceremony. As my introduction to CAD design my goal was to push the complexity of designing as far as I could with a 3 month time constraint. I led my group to design a highly accurate recreation of the Mercedes W203 car modified to have James Bond style spy features.<span class = "image right"><img src="images/engine.png" alt="" data-position="center center"/></span></p>
+													  <p><span class = "image right"><img src="images/engine.png" alt="" data-position="center center"/></span>This CAD design project was a term long project in my CAD design course where everyone's projects were compared and the top 3 presented at a ceremony. As my introduction to CAD design my goal was to push the complexity of designing as far as I could with a 3 month time constraint. I led my group to design a highly accurate recreation of the Mercedes W203 car modified to have James Bond style spy features.</p>
 													  <p><span class = "image left"><img src="images/suspension.png" alt="" data-position="center center"/></span>I personally designed over 100 unique parts that worked together in one large drivetrain assembly. The assembly consisted of a custom V8 engine with dual camshafts, 5 gear transmission, clutch pack, driveshafts, and differential. Through advanced mates I created an assembly that would turn the rear wheels of the car when rotating the engine's crankshaft, properly manipulating each part along the system.</p>
-													  <p>This project resulted in our group placing 3rd overall out of 70 teams even with a below average group size. Additionally, there were fully independent suspension systems integrated on the front and rear of the chassis as well as a surface modelled exterior. Overall, this project touched on nearly every aspect of Solidworks providing me with strong fundamental knowledge for a broad range of CAD design tools.<span class = "image right"><img src="images/engineexplode.png" alt="" data-position="center center"/></span></p>
+													  <p><span class = "image right"><img src="images/engineexplode.png" alt="" data-position="center center"/></span>This project resulted in our group placing 3rd overall out of 70 teams even with a below average group size. Additionally, there were fully independent suspension systems integrated on the front and rear of the chassis as well as a surface modelled exterior. Overall, this project touched on nearly every aspect of Solidworks providing me with strong fundamental knowledge for a broad range of CAD design tools.</p>
 													</div>
 												</li>
 											</ul>
@@ -346,7 +357,7 @@
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
 													  <p>The torpedo launching system on Marine Robotics’ AUV has been the primary focus of mine over my duration on the team. The launch system has been designed to use a fully mechanical assembly to launch a torpedo with a pre-set power through a target at competition.</p>
-													  <p>The assembly uses as little hardware as possible, relying on one spring and a set screw for adjusting its pre-load, as well as a solenoid to release the torpedo. It is held in place with geometric constraints and launched by rotating it so its fins line up with holes to launch out. The torpedo itself is tuned to be neutrally buoyant through varying the infill density of the print at different positions along the torpedo. This allows it to both reliably shoot in a straight line and in turn go farther due to lower drag forces.</p>
+													  <p><span class = "image right"><img src="images/Torpedoirl.jpg" alt="" data-position="center center"/></span>The assembly uses as little hardware as possible, relying on one spring and a set screw for adjusting its pre-load, as well as a solenoid to release the torpedo. It is held in place with geometric constraints and launched by rotating it so its fins line up with holes to launch out. The torpedo itself is tuned to be neutrally buoyant through varying the infill density of the print at different positions along the torpedo. This allows it to both reliably shoot in a straight line and in turn go farther due to lower drag forces.</p>
 													</div>
 												</li>
 											</ul>
@@ -369,7 +380,8 @@
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
 													  <p>My manufacturing course served as my introduction to the theory of manufacturing processes and practical hands-on experience using various machines. Our course project was to design either a model train or a clamp requiring every major machining operation. I pushed the limit of what could be done with our time constraints opting to make a functional kinematic assembly.</p>
-													  <p>When my design was reviewed my group was explicitly told that each year groups attempt and fail to make proper meshing gears with a functioning rotating assembly. This motivated me to make the design work, and through heavy planning outside of our labs to make as effective use of our machining time as possible we managed to achieve a working fourbar linkage that rotates as the handcar is moved along a table. Solutions had to be quickly developed along the process as there were occasional oversights in our designs, such as the gear teeth being too long. Creative uses of hardware and leaving room for adjustment in the designs worked to mitigate most major problems that arose over the duration of the project. </p>
+													  <p>When my design was reviewed my group was explicitly told that each year groups attempt and fail to make proper meshing gears with a functioning rotating assembly. This motivated me to make the design work, and through heavy planning outside of our labs to make as <video style="width:30vw; float:right; margin: 0.5em 0 0 1.5em;" autoplay muted loop controls><source src="images/videos/Handcar.mp4" type="video/mp4"></video>effective use of our machining time as possible we managed to achieve a working fourbar linkage that rotates as the handcar is moved along a table. Solutions had to be quickly developed along the process as there were occasional oversights in our designs, such as the gear teeth being too long. Creative uses of hardware and leaving room for adjustment in the designs worked to mitigate most major problems that arose over the duration of the project. </p>
+													  
 													</div>
 												</li>
 											</ul>

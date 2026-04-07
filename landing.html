@@ -74,7 +74,6 @@
 												<h3>In Progress</h3>
 												<ul>
 													<li>AUV <i style="font-size: smaller;">(Personal)</i></li>
-													<li>BLDC Motor <i style="font-size: smaller;">(Personal/Course)</i></li>
 													<li>Tether Spool <i style="font-size: smaller;">(Design Team)</i></li>
 													<li>Final Torpedo Revision <i style="font-size: smaller;">(Design Team)</i></li>
 													<li>Gearbox <i style="font-size: smaller;">(Course)</i></li>
@@ -84,6 +83,7 @@
 												<h3>Future/Paused Projects</h3>
 												<ul>
 													<li>Rotating Parallel SCARA Arm <i style="font-size: smaller;">(Paused)</i></li>
+													<li>BLDC Motor V2 + Harmonic Drive <i style="font-size: smaller;">(Planned)</i></li>
 													<li>Ball balancing robot <i style="font-size: smaller;">(Paused)</i></li>
 													<li>Distortion Pedal <i style="font-size: smaller;">(Planned)</i></li>
 													<li>3D Scanner</li>
@@ -117,13 +117,10 @@
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
 													  <p><span class = "image right"><img src="images/Thruster.jpg" alt="" data-position="center center"/></span>My AUV project is an ongoing collaboration between me and another student with two main objectives in mind: to push our software and computer vision skills and to complete a project with a significant scope, comparable to that of a design team. The goal of this project is to create a fully autonomous underwater drone that can topographically map its environment and detect objects such as trash in the water. As added depth I have been innovating and designing many traditionally off the shelf components such as our thrusters and motor controllers from scratch.</p>
-													  <p>Currently the thruster designs use A2212 drone motors mounted to a custom propeller and thruster body. The electronics enclosure tube uses electrical cable glands with custom inserts as penetrators. The initial design goal of the AUV is to have 4 degrees of freedom from the 4 thrusters, and vertical control through a PID controlled ballast. <span class = "image left"><img src="images/AUVEnclosure.jpg" alt="" data-position="center center"/></span>Eventually plans are to upgrade to include more thrusters and potentially buy higher quality motors. So far a significant portion of testing has focused on waterproofing the electronics enclosure and testing methods of penetrating it with cables and a tube to bring water into the ballast without exposing any electronics to moisture. </p>
+													  <p><video style="width:15vw; float:left; margin-right: 1em;" autoplay muted loop controls><source src="images/videos/ThrusterTest2.mp4" type="video/mp4">This video is not supported by your browser.</video>Currently the thruster designs use A2212 drone motors mounted to a custom propeller and thruster body. The electronics enclosure tube uses electrical cable glands with custom inserts as penetrators. The initial design goal of the AUV is to have 4 degrees of freedom from the 4 thrusters, and vertical control through a PID controlled ballast. Eventually plans are to upgrade to include more thrusters and potentially buy higher quality motors. So far a significant portion of testing has focused on waterproofing the electronics enclosure and testing methods of penetrating it with cables and a tube to bring water into the ballast without exposing any electronics to moisture. <span class = "image right"><img src="images/AUVEnclosure.jpg" alt="" data-position="center center"/></span></p>
 													  <p>My design for the removable endcaps uses O-rings I cut out of rubber strips, teflon tape, and a 3D printed cap to seal the ends of the acrylic tube. So far this setup has been tested at low depth for around 30 hours under submersion with no leaks. The thruster designs have been individually tested and are now being implemented together on the AUV structure.</p>
 													  <p>Once working remote control has been achieved the next steps are to implement our Raspberry Pi using ROS and get computer vision working so we can begin developing the software aspects of the project. For initial remote control testing both an ethernet tether and low frequency (27MHz) radio frequencies are being considered for low depth operation.</p>
-													  <video width="30%vw" autoplay muted loop controls>
-													    <source src="https://github.com/Busch0/portfolio/raw/refs/heads/main/images/Videos/ThrusterTest.mp4" type="video/mp4">
-														This video is not supported by your browser.
-													  </video>
+													  
 													</div>
 												</li>
 											</ul>
@@ -202,7 +199,10 @@
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
-													  <p><span class = "image left"><img src="images/ballshooter.png" alt="" data-position="center center"/></span>This project was my first exposure to computer vision and the integration of multiple disciplines. I collaborated with a computer science student to create a robot that could autonomously detect and shoot at cups from a distance. </p>
+													  <p><video style="width:12vw; float:left; margin: 0 1em 0 0;" autoplay muted loop controls>
+														<source src="images/videos/Ballshooter.mp4" type="video/mp4">
+														This video is not supported by your browser.
+													</video>This project was my first exposure to computer vision and the integration of multiple disciplines. I collaborated with a computer science student to create a robot that could autonomously detect and shoot at cups from a distance. </p>
 													  <p>The assembly uses stepper motors to create a 360 degree rotating platform. On top a ball launcher is mounted that uses a servo motor for its trigger and dc motors with flywheels for shooting balls. The way the robot detects cups is through a combination of an ultrasonic sensor and a camera (either phone or webcam). <span class = "image right"><img src="images/CupFilter1.png" alt="" data-position="center center"/><img src="images/CupFilter2.png" alt="" data-position="center center"/></span></p>
 													  <p>The detection algorithm works by applying a filter to the image the computer receives and the center of mass of the filtered pixels is found and determined as likely the center of the cup. To assist the position the robot aims at, it scans over the cup and the point closest to the robot is determined by the ultrasonic sensor as the center. The robot had an accurate range of between 2ft-8ft.</p>
 													</div>
@@ -384,7 +384,6 @@
 													<div class="contentt">
 													  <p>My manufacturing course served as my introduction to the theory of manufacturing processes and practical hands-on experience using various machines. Our course project was to design either a model train or a clamp requiring every major machining operation. I pushed the limit of what could be done with our time constraints opting to make a functional kinematic assembly.</p>
 													  <p>When my design was reviewed my group was explicitly told that each year groups attempt and fail to make proper meshing gears with a functioning rotating assembly. This motivated me to make the design work, and through heavy planning outside of our labs to make as <video style="width:30vw; float:right; margin: 0.5em 0 0 1.5em;" autoplay muted loop controls><source src="https://github.com/Busch0/portfolio/raw/refs/heads/main/images/Videos/Handcar.mp4" type="video/mp4">This video is not supported by your browser.</video>effective use of our machining time as possible we managed to achieve a working fourbar linkage that rotates as the handcar is moved along a table. Solutions had to be quickly developed along the process as there were occasional oversights in our designs, such as the gear teeth being too long. Creative uses of hardware and leaving room for adjustment in the designs worked to mitigate most major problems that arose over the duration of the project. </p>
-													  
 													</div>
 												</li>
 											</ul>

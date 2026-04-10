@@ -143,7 +143,7 @@
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
-													  <p><span class = "image left" ><img style="width:15vw;" src="images/MotorGearbox.jpg" alt="" data-position="center center"/></span>This custom BLDC motor serves as both a course project and my own investigation into robotics actuators, learning about field oriented control (FOC) fundamentals and implementation. I designed the motor to have a wide and shallow profile for high torque density while still being small enough to embed into a larger project in the future. The motor consists of 24 stator coils wound with 26awg wire, and 22 magnet poles to achieve its relatively high torque given the material constraints. As this project was also used for a course it had limitations regarding buying a stator, so it is currently printed out of PLA, with a PETG rotor. There is an MT6701 magnetic encoder with a magnet installed just below the shaft of the motor to provide position feedback and allow for position, torque, and velocity control. Additionally, I designed a planetary gearset that mounts on top with a 5:1 ratio to reduce the speed for higher torque. <span class = "image right"><img style="width:15vw;" src="images/MotorInside.jpg" alt="" data-position="center center"/></span></p>
+													  <p><span class = "image left" ><img style="width:15vw;" src="images/MotorGearbox.jpg" alt="" data-position="center center"/></span>This custom BLDC motor serves as both a course project and my own investigation into robotics actuators, learning about field oriented control (FOC) fundamentals and implementation. I designed the motor to have a wide and shallow profile for high torque density while still being small enough to embed into a larger project in the future. The motor consists of 24 stator coils wound with 26awg wire, and 22 magnet poles to achieve its relatively high torque given the material constraints. As this project was also used for a course it had limitations regarding buying a stator, so it is currently printed out of PLA, with a PETG rotor. I have reduced the airgap to an average of ~0.3mm however there were issues with rubbing when decreasing it any further due to a mix of factors, primarily 3D printing tolerances and thermal expansion. There is an MT6701 magnetic encoder with a magnet installed just below the shaft of the motor to provide position feedback and allow for position, torque, and velocity control. Additionally, I designed a planetary gearset that mounts on top with a 5:1 ratio to reduce the speed for higher torque. <span class = "image right"><img style="width:15vw;" src="images/MotorInside.jpg" alt="" data-position="center center"/></span></p>
 													  <p>Originally I had planned on making a two stage planetary gearbox however I have decided to create a new design from the ground up. My plans are to recreate the motor with higher quality materials and explore harmonic and cycloidal reduction systems over the summer once I am no longer constrained by time and course requirements. The moving parts will be printed out of nylon due to its lower friction and higher resistance to abrasion. <span class = "image left"><img style="width:15vw;" src="images/MotorTop.jpg" alt="" data-position="center center"/></span>The motor stator and outrunner will be created out of a steel to provide significantly higher magnetic flux density within the motor allowing for a much higher torque (estimated to be roughly 2x higher) than the plastic design.</p>
 													  <p>The present height of the motor and planetary gearset is ~63mm (excluding the electronics enclosure it's mounted on) and my goal is to reduce this with the new design, utilizing the space within the stator as the first stage of the gearbox. Below are two videos showing the motor running at approximately 30% throttle with and without the gearbox attached.</p>
 													<video style="width:30vw; float:left;" autoplay muted loop controls>
@@ -346,6 +346,30 @@
 							<section id="two" class="spotlights">
 								<section>
 									<a class="image">
+										<img src="images/Full Gearbox Assembly.png" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="minor">
+												<h3>Naval Gearbox</h3>
+												<h5>February 2026-April 2026</h5>
+											</header>
+											<!-- <p>ACTUALLY GETTING TESTED THIS YEAR :fire:</p> -->
+											<ul class="actions">
+												<li>
+													<button class="collapsible">Learn More</button>
+													<div class="contentt">
+													  <p><span class = "image left"><img style="margin-bottom: 2em;" src="images/GearboxClosed.png" alt="" data-position="center center"/></span>This gearbox project exercised all of the engineering principles taught in my design of machinery course. The context it was designed to operate in was to reduce a boat's engine output to drive a propeller. While it uses a simple reduction system of two gears, it very thoroughly utilizes proper engineering design, conforming to a list of around 30 constraints. Each part of the gearbox is designed to a specified safety factor and expected lifespan, from the crushing force on the shaft keys to the 20,000 hour expected life of the bearings with 95% reliability. The gear sizes were chosen based on a required gear reduction and calculated fatigue stresses to have a safety factor of 1.5 for bending and 1.2 at the surface. The pinion and gear shafts were designed for infinite life, with varied diameters at the gear and bearing locations to have a fatigue safety factor greater than 2.5. </p>
+													  <p><span class = "image right"><img src="images/GearboxOpen.png" alt="" data-position="center center"/></span>The parts were designed to fail in a particular order in the event that failure occurs, ensuring minimal damage is caused to important parts such as the casing. Calculations were done for a range of materials and the final ones were chosen based on a weighted matrix considering cost, weight, and yield strength. Additionally, there are features for sealing, filling, draining, and checking the lubricant within the gearbox. There was an additional focus on machineability, and assembly of the designed parts. It was required to have self aligning features for reliable assembly of the two housing parts, and both the input and output shafts the gears are mounted to. Manufacturing drawings were drafted for the entire assembly as well as each part that could not be bought as an off the shelf component. </p>
+													  <img style="width:65vw; float:center;" src="images/GearboxExplode.png" alt="" data-position="center center"/>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
 										<img src="images/torpedo.png" alt="" data-position="top center" />
 									</a>
 									<div class="content">
@@ -374,7 +398,7 @@
 									<div class="content">
 										<div class="inner">
 											<header class="minor">
-												<h3>Handcar</h3>
+												<h3>Aluminum Handcar</h3>
 												<h5>September 2025 - November 2025</h5>
 											</header>
 											<!-- <p>They thought we couldn't do it. They were wrong.</p> -->

@@ -64,13 +64,13 @@
 					<div id="main">
 						<!-- One -->
 							<section id="one">
-								<div class="inner">
+								<div class="inner" style="border-bottom: 2px solid rgba(0, 0, 0, 0.185);">
 									<!-- <header class="minor">
 										<h2>"You should add a small text section here" - Sun Tzu</h2>
 									</header>
 									<p> Feel free to explore my past projects by category or scroll through the full list below.</p> -->
-									<div class="row" style="border: 10px;">
-											<div class="col-6 col-12-small">
+									<div class="row" >
+											<div class="col-6 col-12-small" >
 												<h3>In Progress</h3>
 												<ul>
 													<li>AUV <i style="font-size: smaller;">(Personal)</i></li>
@@ -117,7 +117,7 @@
 													  <p><span class = "image left" ><img style="width:13vw;" src="images/ActuatorTransparent.png" alt="" data-position="center center"/></span>My robotics actuator project builds on the knowledge I gained from my first BLDC motor build and attempts to improve its efficiency to be practical in real world use, specifically for a SCARA arm. The actuator consists of an enclosure holding a 36N42P BLDC motor with a 31:1 harmonic drive fitted within the space of the stator. A harmonic drive was chosen due to the high gear ratios that can be fit within a compact design, and the low backlash from their design. As of my last tests the actuator has 3.6Nm of torque, output RPM of ~170 (motor at 5.3k RPM) and 91arcmin of backlash. The stator is built of a laminated iron core, and the rest of the actuator is currently printed out of various 3D printed materials. The flex spline of the harmonic drive is a multimaterial print that uses beam interlocking to mechanically bond a solid PETG output face to the TPU spline.</p>
 													  <p><span class = "image right"><img style="width:15vw;" src="images/ActuatorFlexSpline.jpg" alt="" data-position="center center"/></span>While the actuator is functional I am currently experimenting with different methods of improving the efficiency of the harmonic drive as it can have much lower backlash and higher torque with some minor improvements. My goal is to output at least 10Nm of torque and reduce the backlash to below 60arcmin. Using PA6 nylon for the flex spline should help both the issue of high friction in the gearbox, losing power, and reduce the backlash of the flex spline that is caused by the flexibility of TPU. The flexing of the plastic rotor is going to be improved by using a stiffer material such as PETG-CF (added bonus of high dimensional accuracy), reducing eccentricity in the motor.</p>
 													  <p>The actuator currently has a diameter of 134mm and a thickness of ~52mm with a weight of 563g. I am aiming to reduce the thickness of the actuator by utilizing the deadspace caused by the harmonic drive being thicker than the BLDC motor. Below is a video showing the current actuator prototype running.</p>
-													<video style="width:25vw; float:left;" autoplay muted loop controls>
+													<video style="width:20vw; float:left;" autoplay muted loop controls>
 														<source src="https://github.com/Busch0/portfolio/raw/refs/heads/main/images/Videos/Actuatorspinning.mp4" type="video/mp4">
 														This video is not supported by your browser.
 													</video>

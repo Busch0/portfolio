@@ -74,19 +74,17 @@
 												<h3>In Progress</h3>
 												<ul>
 													<li>AUV <i style="font-size: smaller;">(Personal)</i></li>
-													<li>Tether Spool <i style="font-size: smaller;">(Design Team)</i></li>
+													<li>Robotics Actuator <i style="font-size: smaller;">(Personal)</i></li>
 													<li>Final Torpedo Revision <i style="font-size: smaller;">(Design Team)</i></li>
-													<li>Gearbox <i style="font-size: smaller;">(Course)</i></li>
 												</ul>
 											</div>
 											<div class="col-6 col-12-small">
 												<h3>Future/Paused Projects</h3>
 												<ul>
-													<li>Rotating Parallel SCARA Arm <i style="font-size: smaller;">(Paused)</i></li>
-													<li>BLDC Motor V2 + Harmonic Drive <i style="font-size: smaller;">(Planned)</i></li>
+													<li>SCARA Robot Arm <i style="font-size: smaller;">(Paused)</i></li>
 													<li>Ball balancing robot <i style="font-size: smaller;">(Paused)</i></li>
 													<li>Distortion Pedal <i style="font-size: smaller;">(Planned)</i></li>
-													<li>3D Scanner</li>
+													<!-- <li>3D Scanner</li> -->
 													<!-- <li>Magnetic Levitation Project</li> -->
 												</ul>
 											</div>
@@ -102,13 +100,47 @@
 							<section id="two" class="spotlights">
 								<section>
 									<a class="image">
+										<img src="images/Actuator.jpg" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="minor">
+												<h3>Robotics Actuator</h3>
+												<h5>May 2026 - Present</h5>
+											</header>
+											<!-- <p>Saved -$231 by building it myself</p> -->
+											<ul class="actions">
+												<!--<li><a href="" class="button">Learn more</a></li>-->
+												<li>
+													<button class="collapsible">Learn More</button>
+													<div class="contentt">
+													  <p><span class = "image left" ><img style="width:13vw;" src="images/ActuatorTransparent.png" alt="" data-position="center center"/></span>My robotics actuator project builds on the knowledge I gained from my first BLDC motor build and attempts to improve its efficiency to be practical in real world use, specifically for a SCARA arm. The actuator consists of an enclosure holding a 36N42P BLDC motor with a 31:1 harmonic drive fitted within the space of the stator. A harmonic drive was chosen due to the high gear ratios that can be fit within a compact design, and the low backlash from their design. As of my last tests the actuator has 3.6Nm of torque, output RPM of ~170 (motor at 5.3k RPM) and 91arcmin of backlash. The stator is built of a laminated iron core, and the rest of the actuator is currently printed out of various 3D printed materials. The flex spline of the harmonic drive is a multimaterial print that uses beam interlocking to mechanically bond a solid PETG output face to the TPU spline.</p>
+													  <p><span class = "image right"><img style="width:15vw;" src="images/ActuatorFlexSpline.jpg" alt="" data-position="center center"/></span>While the actuator is functional I am currently experimenting with different methods of improving the efficiency of the harmonic drive as it can have much lower backlash and higher torque with some minor improvements. My goal is to output at least 10Nm of torque and reduce the backlash to below 60arcmin. Using PA6 nylon for the flex spline should help both the issue of high friction in the gearbox, losing power, and reduce the backlash of the flex spline that is caused by the flexibility of TPU. The flexing of the plastic rotor is going to be improved by using a stiffer material such as PETG-CF (added bonus of high dimensional accuracy), reducing eccentricity in the motor.</p>
+													  <p>The actuator currently has a diameter of 134mm and a thickness of ~52mm with a weight of 563g. I am aiming to reduce the thickness of the actuator by utilizing the deadspace caused by the harmonic drive being thicker than the BLDC motor. Below is a video showing the current actuator prototype running.</p>
+													<video style="width:25vw; float:left;" autoplay muted loop controls>
+														<source src="https://github.com/Busch0/portfolio/raw/refs/heads/main/images/Videos/Actuatorspinning.mp4" type="video/mp4">
+														This video is not supported by your browser.
+													</video>
+													<!-- <video style="width:30vw; float:left; " autoplay muted loop controls>
+														<source src="https://github.com/Busch0/portfolio/raw/refs/heads/main/images/Videos/MotorPlanetary.mp4" type="video/mp4">
+														This video is not supported by your browser.
+													</video> -->
+													</div>
+													
+												</li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
 										<img src="images/AUV.jpg" alt="" data-position="top center" />
 									</a>
 									<div class="content">
 										<div class="inner">
 											<header class="minor">
 												<h3>Autonomous Underwater Vehicle</h3>
-												<h5>February 2026 - TBD</h5>
+												<h5>February 2026 - Present</h5>
 											</header>
 											<!-- <p>costs like half my salary this better work out</p> -->
 											<ul class="actions">
@@ -116,10 +148,10 @@
 												<li>
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
-													  <p><span class = "image right"><img src="images/Thruster.jpg" alt="" data-position="center center"/></span>My AUV project is an ongoing collaboration between me and another student with two main objectives in mind: to push our software and computer vision skills and to complete a project with a significant scope, comparable to that of a design team. The goal of this project is to create a fully autonomous underwater drone that can topographically map its environment and detect objects such as trash in the water. As added depth I have been innovating and designing many traditionally off the shelf components such as our thrusters and motor controllers from scratch.</p>
-													  <p><video style="width:15vw; float:left; margin-right: 1em;" autoplay muted loop controls><source src="https://github.com/Busch0/portfolio/raw/refs/heads/main/images/Videos/ThrusterTest2.mp4" type="video/mp4">This video is not supported by your browser.</video>Currently the thruster designs use A2212 drone motors mounted to a custom propeller and thruster body. The electronics enclosure tube uses electrical cable glands with custom inserts as penetrators. The initial design goal of the AUV is to have 4 degrees of freedom from the 4 thrusters, and vertical control through a PID controlled ballast. Eventually plans are to upgrade to include more thrusters and potentially buy higher quality motors. So far a significant portion of testing has focused on waterproofing the electronics enclosure and testing methods of penetrating it with cables and a tube to bring water into the ballast without exposing any electronics to moisture. <span class = "image right"><img src="images/AUVEnclosure.jpg" alt="" data-position="center center"/></span></p>
-													  <p>My design for the removable endcaps uses O-rings I cut out of rubber strips, teflon tape, and a 3D printed cap to seal the ends of the acrylic tube. So far this setup has been tested at low depth for around 30 hours under submersion with no leaks. The thruster designs have been individually tested and are now being implemented together on the AUV structure.</p>
-													  <p>Once working remote control has been achieved the next steps are to implement our Raspberry Pi using ROS and get computer vision working so we can begin developing the software aspects of the project. For initial remote control testing both an ethernet tether and low frequency (27MHz) radio frequencies are being considered for low depth operation.</p>
+													  <p><span class = "image right"><img src="images/Thruster.jpg" alt="" data-position="center center"/></span>My AUV project is an ongoing collaboration between me and another student with two main objectives in mind: to push our software and computer vision skills and to complete a project with significant scope, comparable to that of a capstone project. The goal of this project is to create a fully autonomous underwater drone that can conduct topography mapping of marine environments and detect objects such as trash in the water. It will have the tools for a variety of applications whether it's mapping underwater environments for infrastructure development, monitoring marine ecosystems or even finding objects underwater (such as trash or lost items) for recovery.</p>
+													  <p><video style="width:15vw; float:left; margin-right: 1em;" autoplay muted loop controls><source src="https://github.com/Busch0/portfolio/raw/refs/heads/main/images/Videos/ThrusterTest2.mp4" type="video/mp4">This video is not supported by your browser.</video>For this project I have been designing many traditionally off the shelf components such as our thrusters and motor controllers from scratch. Currently the thruster designs use A2212 drone motors mounted to a custom propeller and thruster body. The electronics enclosure tube uses electrical cable glands with custom inserts as penetrators. The initial design goal of the AUV is to have 4 degrees of freedom from the 4 thrusters, and vertical control through a PID controlled ballast. Eventually plans are to upgrade to include more thrusters and potentially buy higher quality motors. So far a significant portion of testing has focused on waterproofing the electronics enclosure and testing methods of penetrating it with cables and a tube to bring water into the ballast without exposing any electronics to moisture. <span class = "image right"><img src="images/AUVEnclosure.jpg" alt="" data-position="center center"/></span></p>
+													  <p>My design for the removable endcaps uses nitrile rubber O-rings I cut out of strips, teflon tape, and a 3D printed cap assembly to seal the ends of the acrylic tube. So far this setup has been tested at low depth for around 30 hours under submersion with no leaks. The thruster designs have been individually tested and are now being implemented together on the AUV structure.</p>
+													  <p>Once remote control operation has been tested the next steps are to implement our Raspberry Pi using ROS and get computer vision working so we can begin developing the software aspects of the project. For initial remote control testing a connected antenna floating at the water's surface will be used to allow for mobility in low depth waters.</p>
 													  
 													</div>
 												</li>
@@ -360,7 +392,7 @@
 													<button class="collapsible">Learn More</button>
 													<div class="contentt">
 													  <p><span class = "image left"><img style="margin-bottom: 2em;" src="images/GearboxClosed.png" alt="" data-position="center center"/></span>This gearbox project exercised all of the engineering principles taught in my design of machinery course. The context it was designed to operate in was to reduce a boat's engine output to drive a propeller. While it uses a simple reduction system of two gears, it very thoroughly utilizes proper engineering design, conforming to a list of around 30 constraints. Each part of the gearbox is designed to a specified safety factor and expected lifespan, from the crushing force on the shaft keys to the 20,000 hour expected life of the bearings with 95% reliability. The gear sizes were chosen based on a required gear reduction and calculated fatigue stresses to have a safety factor of 1.5 for bending and 1.2 at the surface. The pinion and gear shafts were designed for infinite life, with varied diameters at the gear and bearing locations to have a fatigue safety factor greater than 2.5. </p>
-													  <p><span class = "image right"><img src="images/GearboxOpen.png" alt="" data-position="center center"/></span>The parts were designed to fail in a particular order in the event that failure occurs, ensuring minimal damage is caused to important parts such as the casing. Calculations were done for a range of materials and the final ones were chosen based on a weighted matrix considering cost, weight, and yield strength. Additionally, there are features for sealing, filling, draining, and checking the lubricant within the gearbox. There was an additional focus on machineability, and assembly of the designed parts. It was required to have self aligning features for reliable assembly of the two housing parts, and both the input and output shafts the gears are mounted to. Manufacturing drawings were drafted for the entire assembly as well as each part that could not be bought as an off the shelf component. </p>
+													  <p><span class = "image right"><img src="images/GearboxOpen.png" alt="" data-position="center center"/></span>The parts were designed to fail in a particular order in the event that failure occurs, ensuring minimal damage is caused to important parts such as the gears. Calculations were done for a range of materials and the final ones were chosen based on a weighted matrix considering cost, weight, and yield strength. Additionally, there are features for sealing, filling, draining, and checking the lubricant within the gearbox. There was an additional focus on machineability, and assembly of the designed parts. It was required to have self aligning features for reliable assembly of the two housing parts, and both the input and output shafts the gears are mounted to. Manufacturing drawings were drafted for the entire assembly as well as each part that could not be bought as an off the shelf component. </p>
 													  <img style="width:65vw; float:center;" src="images/GearboxExplode.png" alt="" data-position="center center"/>
 													</div>
 												</li>
